@@ -4,8 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import SQLAlchemyError
 
 
-from src.Model.usuarioModel import Usuario as UserModel
-
 accountBp = Blueprint('account',__name__, url_prefix='/account')
 
 

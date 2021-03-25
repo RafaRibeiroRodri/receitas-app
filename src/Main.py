@@ -8,7 +8,6 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 from src.Controller.loginController import accountBp
 from src.Controller.receitasController import receitasBp
 
-from src.Model.usuarioModel import db as usuario_db
 from src.Model.receitaModel import db as receita_db
 from src.Model.IngredienteModel import db as ingrediente_db
 from src.Model.IngredientedaReceitaModel import db as ingredientereceita_db
@@ -33,7 +32,6 @@ try:
     app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{_USERNAME}:{_PASSWORD}@{_HOST}:{_PORT}/{_DATABASE}'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
-    usuario_db.init_app(app)
     receita_db.init_app(app)
     ingrediente_db.init_app(app)
     ingredientereceita_db.init_app(app)
@@ -58,7 +56,6 @@ def init_database(appFlask):
         pass
 
     with appFlask.app_context():
-        usuario_db.create_all()
         receita_db.create_all()
         ingrediente_db.create_all()
         ingredientereceita_db.create_all()
