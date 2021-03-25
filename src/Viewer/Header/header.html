@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='Header/header.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Header/header.css') }}">
+</head>
+<body>
+    <div class="header-background">
+        <div class="header-titulo">
+            <a href='/'>Sistema de receita</a>
+        </div>
+
+        <div id="divBusca">
+            <img src="../../../imagens/searchicon.jpg" alt="Buscar..."/>
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <button id="btnBusca">Buscar</button>
+        </div>
+
+    </div>
+</body>
+</html>
