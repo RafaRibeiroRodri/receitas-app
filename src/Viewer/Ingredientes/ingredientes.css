@@ -1,0 +1,88 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    margin: 8px;
+    display: block;
+}
+.title{
+    align-self: center;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 1px solid black !important;
+    max-width: max-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: center;
+}
+
+.ingrediente {
+    width: 100%;
+    align-items: center;
+}
+
+.botao {
+    display: flex;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}

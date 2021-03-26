@@ -48,6 +48,9 @@ def getRecetia():
 def registrarReceita():
     return render_template('CadastrarReceita/cadastrar.html', title='Crie uma Receita')
 
+@receitasBp.route('/cadastrarIngredientes', methods=["POST","GET"])
+def registrarIngrediente():
+    return render_template('Ingredientes/ingredientes.html', title='Adicione seus ingredientes')
 
 @receitasBp.route('/addReceita', methods=["POST","GET"])
 def addReceita():
