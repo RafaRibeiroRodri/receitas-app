@@ -15,41 +15,43 @@
 
     <h1 stile="text-align:center;">Cadastrar Receita</h1>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <a href="receitas/add">Adicionar Ingredientes</a>
-            </div>
+        <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Ingrediente</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for i in ingredientes %}
+                <tr>
+                    <td>{{i.nome}}</td>
+                    <td>{{i.qtd}}</td>
+                    <td>
+                        <a href="receitas/edit/{{i.id}}">Editar</a> |
+                        <a href="receitas/delete/{{i.id}}">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
         </div>
-    <div class="col-xs-12">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Ingrediente</th>
-                <th>Quantidade</th>
-                <th>Ações</th>
-            </tr>
-            </thead>
-            <tbody>
-                {% for i in ingredientes %}
-            <tr>
-                <td>{{i.nome}}</td>
-                <td>{{i.qtd}}</td>
-                <td>
-                    <a href="receitas/edit/{{i.id}}">Editar</a> |
-                    <a href="receitas/delete/{{i.id}}">Excluir</a>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-    </div>
+        
+
+        <div class="nomereceita">
+            <input type="text" name="nome" id="nome" placeholder="Nome da receita" class="form-control">     
+        </div>
         
             <div class="row">
+                
                 <div class="col-md-6">
                     <input type="text" name="nome" id="nome" placeholder="Nome do Ingrediente" class="form-control">
                 </div>
                 <div class="col-md-6">
                     <input type="Integer" name="qtd" id="qtd" placeholder="Quantidade do Ingrediente" class="form-control">
                 </div>
+                
             </div>
         <br>
             <div class="col-xs-12">
