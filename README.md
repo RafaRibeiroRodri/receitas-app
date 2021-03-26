@@ -1,5 +1,8 @@
 # Sistema de Receitas
 
+## Entregas
+- Entrega 1 https://youtu.be/2ZvbBz7d3Sw
+
 ## Aluno
 - Rafael Ribeiro Rodrigues
 
