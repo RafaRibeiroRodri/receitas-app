@@ -51,20 +51,12 @@ cd src
 python __init__.py
 ```
 
-- No navegador utilize
+- Entre nonavegador com
 ```
 http://127.0.0.1:5000/
 ```
 
-- Tela inicial
-
-```
-Email=usuario@usuario
-Senha=12345
-```
-
 ## Entregas parciais
 
-- [Entrega 1 - Protótipo navegável](https://youtu.be/EYth8GWZtCc)
+- [Entrega 1 - Protótipo navegável](https://youtu.be/2ZvbBz7d3Sw)
 
-- [Entrega 2 - Protótipo navegável]
