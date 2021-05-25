@@ -1,56 +1,69 @@
-# Sistema de Receitas
+# App_Receitas_LES
 
-## Aluno
-- Rafael Ribeiro Rodrigues
+
+## Samuel Dias Xavier
+
+* Repositório para os entregáveis da disciplina de Laborário de Engenharia de Software
 
 ## Objetivo
-- Desenvolver um sistema Web de receitas
+- Desenvolver um sistema Web para criação de receitas em Python
 
 ## Tecnologias
-- Mariadb
+- MySQL
 - Flask
 - SQLAlchemy
 - Jinja2
 - Gunicorn
-- HTML, CSS e Javascript
+- HTML5, CSS e Javascript
+
+# Configuração
 
 ## Requerimentos mínimos
-- Python V3.X
-- Maria DB
+- Python V3.6 ou >
+- MySQL Database
 
 ## Iniciar projeto
-
 - Clonar e atualizar repositório
-- git clone https://github.com/RafaRibeiroRodri/receitas-app.git
+```
+git clone https://github.com/krusader1982/App_Receitas_LES.git
+cd Receitas_app
+git checkout master
+git pull
+```
+- Inicializando ambiente virtual
+```
+ python -m venv venv
+ . venv/Scripts/Activate.ps1 (Powershell)
+ . venv/Scripts/Activate.ps1 (CMD)
+```
 
-- cd receitas-app
-- git checkout master
-- git pull
 
-## Inicializando ambiente virtual
-- python -m venv lib
-- lib\Scripts\activate
- 
-## Instalação das dependências
+- Instalação das dependências
+```
+pip install -r requirements.txt
+```
 
-- pip install -r requisitos.txt
+- Iniciar o projeto
 
-## Configurando ambiente
+```
+cd src
+python __init__.py
+```
 
-- Abre o HeideSQL e configure o Mariadb de acordo com as informações no arquivo .env
+- No navegador utilize
+```
+http://127.0.0.1:5000/
+```
 
-MARIA_DATABASE=Receitas                                                                                                                                                          
- MARIA_HOST=127.0.0.1                                                                                                                                                             
- MARIA_PORT=3306                                                                                                                                                                   
- MARIA_USERNAME=root                                                                                                                                                               
- MARIA_PASSWORD=123456                                                                                                                                                             
-- Após configurado o banco de dados, execute:
+- Tela inicial
 
-python app.py init_db
+```
+Email=usuario@usuario
+Senha=12345
+```
 
-- Agora é só rodar o projeto:
+## Entregas parciais
 
-python app.py
+- [Entrega 1 - Protótipo navegável](https://youtu.be/EYth8GWZtCc)
 
-- Pronto agora você pode navegar:
- http://127.0.0.1:5000/
+- [Entrega 2 - Protótipo navegável]

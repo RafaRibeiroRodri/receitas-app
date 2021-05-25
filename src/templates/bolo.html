@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bolo.css') }}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% include 'header.html' %}
+       
+    <div class="main">
+        <div class="home-receita" >
+             <h1 class="home-title">
+                Bolos
+             </h1>
+            <hr style="width: 70vw;">
+            
+            <div class="align-items-stretch">
+
+                <div class="destaque">
+                    <div class="imagemdestaque">
+                        Foto da receita
+                    </div>
+                    <div class="textodestaque">
+                        <h2>Bolo de fubá</h2>
+                        <p>Uma excelente escolha para aquele café da tarde</p>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="ingrediente">
+                        <h2>Ingredientes</h2>
+                        <p>1 ½ xícara (chá) de fubá mimoso <br>
+                            1 xícara (chá) de farinha de trigo<br>
+                            2 xícaras (chá) de açúcar<br>
+                            4 ovos<br>
+                            1 xícara (chá) de óleo<br>
+                            1 xícara (chá) de leite<br>
+                            1 colher (sopa) de fermento em pó<br>
+                            1 colher (sopa) de sementes de erva-doce<br>
+                            1 pitada de sal<br>
+                            manteiga e farinha de trigo para untar e polvilhar</p>
+                    </div>
+                    <hr style="width: 100%;">
+                    <div class="preparo">
+                        <h2>Modo de preparo</h2>
+                        <p>
+                            - Preaqueça o forno a 180 ºC (temperatura média). <br> 
+                            <br> 
+                            - Com um pedaço de papel toalha (ou pincel), 
+                            unte com manteiga uma fôrma de bolo, com furo no meio, 
+                            de 25 cm de diâmetro tente fazer uma camada bem fina.<br>
+                            <br>  
+                            - Polvilhe com farinha e chacoalhe bem para espalhar. <br>
+                            <br> 
+                            - Bata sobre a pia para retirar o excesso. <br>
+                            <br> 
+                            -Numa tigela separada, quebre um ovo de cada vez e 
+                            transfira para o copo do liquidificador se um estiver 
+                            estragado você não perde toda a receita. Junte o óleo, 
+                            o açúcar e o leite. Bata até ficar liso, por cerca de 5 minutos.<br>
+                            <br> 
+                            - Transfira a mistura para uma tigela grande. Junte o fubá e a farinha, 
+                            passando pela peneira. Com um batedor de arame, mexa delicadamente até 
+                            a massa ficar lisa. Por último misture o fermento, as sementes de erva-doce
+                            e o sal.<br>
+                            <br> 
+                            - Despeje a massa do bolo na fôrma untada e nivele com uma espátula.<br>
+                            <br> 
+                            - Leve ao forno preaquecido e deixe assar por cerca de 30 minutos.<br>
+                            <br> 
+                            - Para saber se o bolo está assado: espete um palito na massa, 
+                            se sair limpo é sinal que o bolo está pronto; caso contrário,
+                            deixe por mais alguns minutos até que asse completamente.<br>
+                            <br> 
+                            - Retire do forno e deixe esfriar por 15 minutos
+                        </p>
+                    </div>
+                </div>   
+            </div>       
+        </div>
+    </div>      
+</body>
+</html>

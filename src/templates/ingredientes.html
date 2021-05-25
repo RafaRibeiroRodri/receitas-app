@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <!-- CSS FOLDER PUBLIC-->
+   <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.css')}}" 
+   media="screen">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Ingredientes.css') }}">
+
+   <script href="{{url_for('static', filename='utils.js')}}"></script>
+
+    <!-- Título da página (aparece na aba) -->
+    <title>Ingredientes</title>
+</head>
+
+    <body>
+        {% include 'header.html' %}
+        <h1 style="text-align:center;">Cadastrar Ingrediente</h1>
+            <form action="/add" class="container" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input   style="text-transform:uppercase" type="text" onblur="uppercase()" name="nome" id="nome" placeholder="Nome do Ingrediente" class="form-control">
+                    </div>
+                </div>
+            <br>
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-block btn-primary">Adicionar</button>
+                </div>
+            <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ingrediente</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for i in ingredientes %}
+                <tr>
+                    <td>{{i.ingrediente_id}}</td>
+                    <td>{{i.nome}}</td>
+                    <td>
+                        <a href="/edit/{{i.ingrediente_id}}">Editar</a> |
+                        <a href="/delete/{{i.ingrediente_id}}">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+            <br>
+            <div class="col-xs-2">
+                <a href="/usuario">
+                <button type="button" class="btn btn-block btn-success">Voltar</button>
+                </a>
+            </div>
+            </section>
+        </form>
+       </div>
+    </body>
+
+    <script>
+        function uppercase()
+        {
+            var x = document.getElementById("nome");
+            x.value = x.value.toUpperCase()
+        }
+    </script>

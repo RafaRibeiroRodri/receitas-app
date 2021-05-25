@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {% include 'header.html' %}
+       
+<div class ="main">
+
+    <div class="destaque">
+        <div class="imagemdestaque">Foto da receita</div>
+        <div class="textodestaque">
+            <h2>Frango com Quiabo</h2>
+            <p>Uma exelente receita mineira</p>
+        </div>
+    </div>
+
+    <h2 class="separador">mais receitas</h2>
+
+
+    <div class="divmaior">
+        <div class="teste">
+            <a href="/bolo">
+                <div class="imagem" style="height:200px;">Foto da receita</div>
+                <div class="texto">
+                    <h2>Bolo de fubá</h2>
+                    <p>Uma excelente escolha para aquele café da tarde</p>
+                </div>
+            </a>         
+        </div>
+    
+        <div class="teste">
+            <a href="">
+                <div class="imagem" style="height:200px;">Foto da receita</div>
+                <div class="texto">
+                    <h2> Frango com Quiabo </h2>
+                    <p>Uma exelente receita mineira</p>
+                </div>
+            </a>
+        </div>
+    
+        <div class="teste">
+            <a href="">
+                <div class="imagem" style="height:200px;">Foto da receita</div>
+                <div class="texto">
+                    <h2> Frango com Quiabo </h2>
+                    <p>Uma exelente receita mineira</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

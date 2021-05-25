@@ -1,0 +1,72 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='public/cadastrar.css') }}">
+    
+    <title>Seu Caderno de Receitas</title>
+
+</head>
+<body>
+    {% include 'header.html' %}
+    <body>
+        <h1 style="text-align:center;">Cadastrar Receita</h1>
+            <form action="/add_receita" class="container" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" style="text-transform:uppercase" onblur="uppercase()" name="nome" id="nome" placeholder="Nome da Receita" class="form-control">
+                    </div>
+                    <div>
+                        <label>Modo de Preparo</label>
+                        <textarea class="form-control" style="text-transform:uppercase" onblur="uppercase()" name="modo_preparo" id="modo_preparo" rows="3"></textarea>
+                    </div>
+                </div>
+            <br>
+                <div class="col-xs-12">
+                    <button type="submit" class="btn btn-block btn-primary">Adicionar</button>
+                </div>
+            <div class="col-xs-12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Receita</th>
+                    <th>Modo de Preparo</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for r in receitas %}
+                <tr>
+                    <td>{{r.receita_id}}</td>
+                    <td>{{r.nome}}</td>
+                    <td>{{r.modo_preparo}}</td>
+                    <td>
+                        <a href="/itens_receita/{{r.receita_id}}">Adicionar itens</a> |
+                        <a href="/edit_receita/{{r.receita_id}}">Editar</a> |
+                        <a href="/delete_receita/{{r.receita_id}}">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+            <br>
+            <div class="col-xs-2">
+                <a href="/usuario">
+                <button type="button" class="btn btn-block btn-success">Voltar</button>
+                </a>
+            </div>
+            </section>
+        </form>
+       </div>
+</body>
+<script>
+    function uppercase()
+    {
+        var x = document.getElementById("nome");
+        x.value = x.value.toUpperCase()
+    }
+</script>
