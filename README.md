@@ -26,7 +26,7 @@
 ## Iniciar projeto
 - Clonar e atualizar repositório
 ```
-git clone https://github.com/krusader1982/App_Receitas_LES.git
+git clone https://github.com/RafaRibeiroRodri/receitas-app.git
 cd Receitas_app
 git checkout master
 git pull
@@ -55,8 +55,4 @@ python __init__.py
 ```
 http://127.0.0.1:5000/
 ```
-
-## Entregas parciais
-
-- [Entrega 1 - Protótipo navegável](https://youtu.be/2ZvbBz7d3Sw)
 
