@@ -1,9 +1,10 @@
 # App_Receitas_LES
 
+## Entregas
+- Entrega 1 https://youtu.be/2ZvbBz7d3Sw
 
-## Samuel Dias Xavier
-
-* Repositório para os entregáveis da disciplina de Laborário de Engenharia de Software
+## Aluno
+- Rafael Ribeiro Rodrigues
 
 ## Objetivo
 - Desenvolver um sistema Web para criação de receitas em Python
