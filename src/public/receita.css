@@ -45,6 +45,10 @@ h1 {
     margin: 10px;
 }
 
+.botao {
+    display: flex;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -75,9 +79,7 @@ h1 {
     margin-right: -15px;
     margin-left: -15px;
 }
-.col-xs-12 {
-    width: 100%;
-}
+
 .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
     float: left;
 }

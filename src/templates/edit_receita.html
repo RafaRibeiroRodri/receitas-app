@@ -15,7 +15,8 @@
 </head>
 
 <body>
-<h1 style="text-align:center;">Editar receita {{ receita.nome }}</h1>
+    {% include 'header.html' %}
+    <h1 style="text-align:center;">Editar receita {{ receita.nome }}</h1>
     <form action="/edit_receita/{{ receita.receita_id }} " class="container" method="POST">
         <div class="row">
             <div class="col-md-6">
