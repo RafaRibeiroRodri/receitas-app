@@ -2,6 +2,7 @@
 
 ## Entregas
 - Entrega 1 https://youtu.be/2ZvbBz7d3Sw
+- Entrega 2 https://youtu.be/9j5BqykBMQ4
 
 ## Aluno
 - Rafael Ribeiro Rodrigues
